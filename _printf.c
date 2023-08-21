@@ -55,8 +55,8 @@ int _printf(const char *format, ...)
 			if (s)
 			{
 				treat_format(s, ap);
+				i = i + 2;
 			}
-			i = i + 2;
 		}
 		putchar(format[i]);
 	}
