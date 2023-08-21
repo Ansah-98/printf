@@ -37,7 +37,9 @@ int _printf(const char *format, ...)
 	va_list ap;
 	size_t i;
 	int s;
-
+	int j;
+	
+	j = (int)(strlen(format));
 	va_start(ap, format);
 
 	if (!format)
@@ -61,5 +63,5 @@ int _printf(const char *format, ...)
 		putchar(format[i]);
 	}
 	va_end(ap);
-	return (0);
+	return (j);
 }
