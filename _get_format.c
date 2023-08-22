@@ -43,6 +43,11 @@ int _str(va_list val)
 	int i;
 
 	sum = 0;
+	if (s == NULL)
+	{
+		_printf("(null)");
+		return (6);
+	}
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		_printf("%c", s[i]);
@@ -63,11 +68,11 @@ int treat_format(int num, va_list val)
 	int sum;
 
 	if (num == 1)
-		sum =_int(val);
+		sum = _int(val);
 	else if (num == 2)
-		sum =_char(val);
+		sum = _char(val);
 	else if (num == 3)
-		sum =_str(val);
+		sum = _str(val);
 
 	return (sum);
 }
