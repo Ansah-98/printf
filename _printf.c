@@ -29,7 +29,7 @@ int check_format(char test)
 
 /**
  * _printf - prints out the character passed into it
- * @format: strings that will be passed into the function 
+ * @format: strings that will be passed into the function
  * Returns : an integer 0
  *
  */
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 	size_t i;
 	int s;
 	int sum;
-	
+
 	va_start(ap, format);
 
 	if (!format)
@@ -57,7 +57,7 @@ int _printf(const char *format, ...)
 			if (s)
 			{
 				sum = (sum + treat_format(s, ap)) - 2;
-			
+
 				i = i + 2;
 			}
 		}
