@@ -4,8 +4,8 @@
 #include <string.h>
 int _int(va_list val)
 {
-	int sum;
-	int i, digit, reversed;
+	
+	long long int i, digit, reversed, sum;
 
 	i = va_arg(val, int);
 	sum = 0;
