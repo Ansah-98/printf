@@ -61,7 +61,7 @@ int _printf(const char *format, ...)
 				i = i + 2;
 			}
 		}
-		putchar(format[i]);
+		_putchar(format[i]);
 	}
 	va_end(ap);
 	return (sum);

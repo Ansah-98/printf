@@ -8,7 +8,7 @@ int main() {
 
 
 		result_int = _printf("%d\n", 42);
-	    printf("Total characters printed (Test Case for _int): %d\n", result_int);
+	    printf("Total characters printed (Test Case for _int): %i\n", result_int);
 
 		      result_char = _printf("%c\n", 'A');
 		         printf("Total characters printed (Test Case for _char): %d\n", result_char);

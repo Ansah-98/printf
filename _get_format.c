@@ -12,7 +12,7 @@ int _int(va_list val)
 
 	if (i < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		i = -i;
 		sum++;
 	}
@@ -29,7 +29,7 @@ int _int(va_list val)
 	{
 		digit = reversed % 10;
 
-		putchar('0' + digit);
+		_putchar('0' + digit);
 
 		reversed /= 10;
 	}
@@ -53,7 +53,7 @@ int _str(va_list val)
 
 int _char(va_list val)
 {
-	putchar(va_arg(val, int));
+	_putchar(va_arg(val, int));
 
 	return (1);
 }
