@@ -5,7 +5,7 @@
 int _int(va_list val)
 {
 	
-	long long int i, digit, reversed, sum;
+	long int i, digit, reversed, sum;
 
 	i = va_arg(val, int);
 	sum = 0;
